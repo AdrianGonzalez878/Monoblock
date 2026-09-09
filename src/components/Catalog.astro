@@ -1,0 +1,35 @@
+---
+import { catalog } from "../data/products";
+import { site } from "../data/site";
+---
+
+<section id="catalogo" class="scroll-mt-20 bg-white py-20 lg:py-28">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8">
+    <div class="max-w-2xl">
+      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-brand">Catálogo</p>
+      <h2 class="mt-3 font-display text-4xl uppercase leading-none text-ink sm:text-5xl">
+        Modelos que fabricamos
+      </h2>
+      <p class="mt-4 text-concrete">
+        Gris y color, ligero y pesado. Si necesitas otra medida o un volumen especial, cotizamos directo de planta.
+        Fabricación estimada: {site.leadTime} después de confirmar el pedido.
+      </p>
+    </div>
+
+    <div class="mt-12 grid gap-8 lg:grid-cols-2">
+      {catalog.map((group) => (
+        <article class="border border-stone/80 p-7">
+          <h3 class="font-display text-3xl uppercase text-ink">{group.title}</h3>
+          <ul class="mt-5 divide-y divide-stone/60">
+            {group.items.map((item) => (
+              <li class="flex items-start gap-3 py-3 text-sm text-charcoal">
+                <span class="mt-1 h-2 w-2 shrink-0 bg-brand"></span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

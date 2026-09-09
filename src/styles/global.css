@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Oswald", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #0c0c0c;
+  --color-charcoal: #141414;
+  --color-steel: #222222;
+  --color-concrete: #6d6862;
+  --color-stone: #c8c2b6;
+  --color-sand: #f3eee6;
+  --color-brand: #e24a12;
+  --color-brand-hot: #ff5a1a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Visible by default. Hidden only after JS confirms IntersectionObserver. */
+@media (prefers-reduced-motion: no-preference) {
+  html.js-reveal main > section:not(#ubicacion),
+  html.js-reveal footer {
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s ease;
+  }
+
+  html.js-reveal main > section:not(#ubicacion):not(.is-visible),
+  html.js-reveal footer:not(.is-visible) {
+    opacity: 0;
+    transform: translate3d(0, 1.25rem, 0);
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background: #f3eee6;
+  color: #141414;
+}
+
+::selection {
+  background: #e24a12;
+  color: #fff;
+}
+
+.wordmark-block {
+  color: #e24a12;
+}

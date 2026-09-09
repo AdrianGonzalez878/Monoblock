@@ -1,0 +1,16 @@
+---
+import { site } from "../data/site";
+
+const mapsSrc = `https://maps.google.com/maps?q=${encodeURIComponent(site.mapsQuery)}&z=16&output=embed`;
+---
+
+<section id="ubicacion" class="scroll-mt-20 bg-white" aria-label="Ubicación en Google Maps">
+  <iframe
+    title="Ubicación de MONOBLOCK BLOQUERA en Google Maps"
+    src={mapsSrc}
+    class="h-[420px] w-full border-0"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen
+  ></iframe>
+</section>
