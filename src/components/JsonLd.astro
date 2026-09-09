@@ -1,0 +1,113 @@
+---
+import { catalog, categories } from "../data/products";
+import { faqs, site } from "../data/site";
+
+interface Props {
+  pageUrl: string;
+}
+
+const pageUrl = Astro.props.pageUrl.replace(/\/$/, "");
+const logo = `${pageUrl}/images/logo-oficial.png`;
+const hero = `${pageUrl}/images/og.jpg`;
+const profiles = [site.social.instagram, site.social.tiktok];
+
+const business = {
+  "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+  "@id": `${pageUrl}/#negocio`,
+  name: site.name,
+  alternateName: site.shortName,
+  description: site.description,
+  url: pageUrl,
+  telephone: site.telephoneIntl,
+  email: site.email,
+  image: [logo, hero, `${pageUrl}/images/hero.jpg`],
+  logo,
+  slogan: site.slogan,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: site.streetAddress,
+    addressLocality: site.locality,
+    addressRegion: site.region,
+    postalCode: site.postalCode,
+    addressCountry: site.country,
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: site.geo.latitude,
+    longitude: site.geo.longitude,
+  },
+  areaServed: [
+    { "@type": "City", name: "Oaxaca de Juárez" },
+    { "@type": "AdministrativeArea", name: "Oaxaca" },
+  ],
+  sameAs: profiles,
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Productos de concreto MONOBLOCK",
+    itemListElement: categories.map((item) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Product",
+        name: item.name,
+        description: `${item.summary} ${item.extra}.`,
+        image: `${pageUrl}${item.image}`,
+        brand: { "@type": "Brand", name: site.name },
+      },
+    })),
+  },
+};
+
+const website = {
+  "@type": "WebSite",
+  "@id": `${pageUrl}/#sitio`,
+  url: pageUrl,
+  name: site.name,
+  inLanguage: site.language,
+  description: site.description,
+  publisher: { "@id": `${pageUrl}/#negocio` },
+};
+
+const crumbs = {
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { name: "Inicio", href: pageUrl },
+    { name: "Productos", href: `${pageUrl}/#productos` },
+    { name: "Catálogo", href: `${pageUrl}/#catalogo` },
+    { name: "Contacto", href: `${pageUrl}/#contacto` },
+  ].map((item, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: item.name,
+    item: item.href,
+  })),
+};
+
+const faq = {
+  "@type": "FAQPage",
+  mainEntity: faqs.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+};
+
+const catalogList = {
+  "@type": "ItemList",
+  name: "Catálogo de block, tabicón y adoquín",
+  itemListElement: catalog.flatMap((group) => group.items.map((name) => `${group.title}: ${name}`)).map((name, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name,
+  })),
+};
+
+const graph = {
+  "@context": "https://schema.org",
+  "@graph": [business, website, crumbs, faq, catalogList],
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(graph)} />

@@ -4,6 +4,7 @@ export type ProductCategory = {
   summary: string;
   extra: string;
   image: string;
+  alt: string;
 };
 
 export type CatalogGroup = {
@@ -18,6 +19,7 @@ export const categories: ProductCategory[] = [
     summary: "12, 15 y 20 cm. Gris, color y ligero.",
     extra: "Block cara de piedra",
     image: "/images/products/block.jpg",
+    alt: "Block hueco de concreto fabricado en MONOBLOCK BLOQUERA, Oaxaca",
   },
   {
     slug: "block-solido",
@@ -25,6 +27,7 @@ export const categories: ProductCategory[] = [
     summary: "Ligero y pesado, en varias medidas.",
     extra: "Tabicón pesado y ligero",
     image: "/images/products/solido.jpg",
+    alt: "Block sólido de concreto para construcción en Oaxaca",
   },
   {
     slug: "adoquin",
@@ -32,6 +35,7 @@ export const categories: ProductCategory[] = [
     summary: "Hexagonal, rectangular y tipo roca.",
     extra: "Bovedilla",
     image: "/images/products/adoquin.jpg",
+    alt: "Adoquín hexagonal de concreto para urbanización en Oaxaca",
   },
   {
     slug: "adopasto",
@@ -39,6 +43,7 @@ export const categories: ProductCategory[] = [
     summary: "10x25x25 cm, gris y color.",
     extra: "Prefabricados de concreto",
     image: "/images/products/adopasto.jpg",
+    alt: "Adopasto de concreto gris y color fabricado en MONOBLOCK",
   },
 ];
 
@@ -99,12 +104,12 @@ export const reasons = [
 ] as const;
 
 export const gallery = [
-  { src: "/images/gallery/01.jpg", alt: "Adoquín hexagonal de color en patio de producción" },
-  { src: "/images/gallery/02.jpg", alt: "Producción de block de concreto" },
-  { src: "/images/gallery/03.jpg", alt: "Piezas de concreto en patio MONOBLOCK" },
-  { src: "/images/gallery/04.jpg", alt: "Block hueco apilado" },
-  { src: "/images/gallery/05.jpg", alt: "Inventario de productos de concreto" },
-  { src: "/images/gallery/06.jpg", alt: "Block listo para entrega" },
-  { src: "/images/gallery/07.jpg", alt: "Adoquines en proceso de curado" },
-  { src: "/images/gallery/08.jpg", alt: "Patio de fabricación MONOBLOCK BLOQUERA" },
+  { src: "/images/gallery/01.jpg", alt: "Adoquín hexagonal de color en el patio de MONOBLOCK BLOQUERA, Oaxaca" },
+  { src: "/images/gallery/02.jpg", alt: "Producción de block de concreto en planta de Oaxaca" },
+  { src: "/images/gallery/03.jpg", alt: "Piezas de concreto en patio de la bloquera MONOBLOCK" },
+  { src: "/images/gallery/04.jpg", alt: "Block hueco apilado listo para obra" },
+  { src: "/images/gallery/05.jpg", alt: "Inventario de productos de concreto en San Agustín Yatareni" },
+  { src: "/images/gallery/06.jpg", alt: "Block de concreto listo para entrega a obra" },
+  { src: "/images/gallery/07.jpg", alt: "Adoquines de concreto en proceso de curado" },
+  { src: "/images/gallery/08.jpg", alt: "Patio de fabricación de MONOBLOCK BLOQUERA en Oaxaca" },
 ] as const;
