@@ -8,7 +8,7 @@ export const site = {
   description:
     "Bloquera en San Agustín Yatareni, Oaxaca. Fabricamos block hueco y sólido, tabicón, adoquín y prefabricados de concreto. Directo de fábrica a tu obra.",
   seoTitle: "Bloquera en Oaxaca | Block, tabicón y adoquín | MONOBLOCK",
-  url: "https://monoblock.vercel.app",
+  url: "https://www.monoblockbloquera.com",
   phone: "951 471 6357",
   phoneHref: "tel:+529514716357",
   telephoneIntl: "+52-951-471-6357",

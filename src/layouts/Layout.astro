@@ -11,7 +11,7 @@ interface Props {
 
 const title = Astro.props.title ?? site.seoTitle;
 const description = Astro.props.description ?? site.description;
-const origin = (Astro.site?.origin ?? site.url).replace(/\/$/, "");
+const origin = site.url.replace(/\/$/, "");
 const canonical = `${origin}${Astro.url.pathname === "/" ? "/" : Astro.url.pathname}`;
 const ogImage = `${origin}/images/og.jpg`;
 ---
