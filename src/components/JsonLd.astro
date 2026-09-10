@@ -44,15 +44,12 @@ const business = {
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Productos de concreto MONOBLOCK",
-    itemListElement: categories.map((item) => ({
-      "@type": "Offer",
-      itemOffered: {
-        "@type": "Product",
-        name: item.name,
-        description: `${item.summary} ${item.extra}.`,
-        image: `${pageUrl}${item.image}`,
-        brand: { "@type": "Brand", name: site.name },
-      },
+    itemListElement: categories.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      description: `${item.summary} ${item.extra}.`,
+      url: `${pageUrl}/#productos`,
     })),
   },
 };
