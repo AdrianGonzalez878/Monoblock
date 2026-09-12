@@ -6,7 +6,7 @@ export const site = {
   qualityLine: "Calidad que se nota. Resistencia que perdura.",
   factoryLine: "Directo de fábrica a tu obra.",
   description:
-    "Bloquera en San Agustín Yatareni, Oaxaca. Fabricamos productos de concreto vibrocomprimidos: block hueco y sólido, tabicón, adoquín y prefabricados. Directo de fábrica a tu obra.",
+    "Bloquera en San Agustín Yatareni, Oaxaca. Fabricamos productos de concreto vibrocomprimidos: block hueco y sólido, tabicón, adoquín y adopasto. Directo de fábrica a tu obra.",
   seoTitle: "Bloquera en Oaxaca | Block, tabicón y adoquín | MONOBLOCK",
   url: "https://www.monoblockbloquera.com",
   phone: "951 471 6357",
@@ -44,7 +44,7 @@ export const faqs = [
   {
     question: "¿Qué productos de concreto vibrocomprimidos fabrican?",
     answer:
-      "Fabricamos productos de concreto vibrocomprimidos: block hueco y sólido, block cara de piedra, tabicón pesado y ligero, adoquín hexagonal, rectangular y tipo roca, adopasto, bovedilla y prefabricados, en gris y color.",
+      "Fabricamos productos de concreto vibrocomprimidos: block hueco y sólido, block cara de piedra, tabicón pesado y ligero, adoquín hexagonal, rectangular y tipo roca, adopasto y bovedilla, en gris y color.",
   },
   {
     question: "¿Atienden constructoras y particulares?",

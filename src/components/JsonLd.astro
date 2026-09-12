@@ -48,7 +48,7 @@ const business = {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      description: `${item.summary} ${item.extra}.`,
+      description: item.extra ? `${item.summary} ${item.extra}.` : `${item.summary}`,
       url: `${pageUrl}/#productos`,
     })),
   },

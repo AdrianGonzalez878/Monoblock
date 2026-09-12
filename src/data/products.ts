@@ -2,7 +2,7 @@ export type ProductCategory = {
   slug: string;
   name: string;
   summary: string;
-  extra: string;
+  extra?: string;
   image: string;
   alt: string;
 };
@@ -41,7 +41,6 @@ export const categories: ProductCategory[] = [
     slug: "adopasto",
     name: "Adopasto",
     summary: "10x25x25 cm, gris y color.",
-    extra: "Prefabricados de concreto",
     image: "/images/products/adopasto.jpg",
     alt: "Adopasto de concreto gris y color fabricado en MONOBLOCK",
   },
@@ -83,7 +82,7 @@ export const reasons = [
   },
   {
     title: "Variedad de medidas",
-    text: "Block, tabicón, adoquín y prefabricados para distintos tipos de proyecto.",
+    text: "Block, tabicón, adoquín y adopasto para distintos tipos de proyecto.",
   },
   {
     title: "Calidad uniforme",

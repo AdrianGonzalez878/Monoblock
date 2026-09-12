@@ -31,15 +31,17 @@ import { categories } from "../data/products";
               <p class="mt-1 text-sm text-concrete">{item.summary}</p>
             </div>
           </article>
-          <p class="border border-stone/70 bg-white px-4 py-3 text-sm text-charcoal sm:hidden">
-            {item.extra}
-          </p>
+          {item.extra && (
+            <p class="border border-stone/70 bg-white px-4 py-3 text-sm text-charcoal sm:hidden">
+              {item.extra}
+            </p>
+          )}
         </div>
       ))}
     </div>
 
-    <ul class="mt-10 hidden gap-3 text-sm text-charcoal sm:grid sm:grid-cols-2 lg:grid-cols-4">
-      {categories.map((item) => (
+    <ul class="mt-10 hidden gap-3 text-sm text-charcoal sm:grid sm:grid-cols-3">
+      {categories.filter((item) => item.extra).map((item) => (
         <li class="border border-stone/70 bg-white px-4 py-3">{item.extra}</li>
       ))}
     </ul>
