@@ -1,11 +1,11 @@
 {
   "name": "MONOBLOCK BLOQUERA",
   "short_name": "MONOBLOCK",
-  "description": "Bloquera en San Agustín Yatareni, Oaxaca. Block, tabicón, adoquín y prefabricados de concreto.",
+  "description": "Bloquera en San Agustín Yatareni, Oaxaca. Productos de concreto vibrocomprimidos: block, tabicón, adoquín y prefabricados.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#0c0c0c",
+  "background_color": "#eef1f5",
+  "theme_color": "#0b1f3a",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

@@ -108,7 +108,7 @@ export const gallery = [
   { src: "/images/gallery/02.jpg", alt: "Producción de block de concreto en planta de Oaxaca" },
   { src: "/images/gallery/03.jpg", alt: "Piezas de concreto en patio de la bloquera MONOBLOCK" },
   { src: "/images/gallery/04.jpg", alt: "Block hueco apilado listo para obra" },
-  { src: "/images/gallery/05.jpg", alt: "Inventario de productos de concreto en San Agustín Yatareni" },
+  { src: "/images/gallery/05.jpg", alt: "Inventario de productos de concreto vibrocomprimidos en San Agustín Yatareni" },
   { src: "/images/gallery/06.jpg", alt: "Block de concreto listo para entrega a obra" },
   { src: "/images/gallery/07.jpg", alt: "Adoquines de concreto en proceso de curado" },
   { src: "/images/gallery/08.jpg", alt: "Patio de fabricación de MONOBLOCK BLOQUERA en Oaxaca" },

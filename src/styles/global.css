@@ -3,14 +3,14 @@
 @theme {
   --font-display: "Oswald", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
-  --color-ink: #0c0c0c;
-  --color-charcoal: #141414;
-  --color-steel: #222222;
-  --color-concrete: #6d6862;
-  --color-stone: #c8c2b6;
-  --color-sand: #f3eee6;
-  --color-brand: #e24a12;
-  --color-brand-hot: #ff5a1a;
+  --color-ink: #0b1f3a;
+  --color-charcoal: #122844;
+  --color-steel: #1a3352;
+  --color-concrete: #5d6773;
+  --color-stone: #b7c0ca;
+  --color-sand: #eef1f5;
+  --color-brand: #16345c;
+  --color-brand-hot: #1f4578;
 }
 
 html {
@@ -41,15 +41,15 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background: #f3eee6;
-  color: #141414;
+  background: #eef1f5;
+  color: #122844;
 }
 
 ::selection {
-  background: #e24a12;
+  background: #16345c;
   color: #fff;
 }
 
 .wordmark-block {
-  color: #e24a12;
+  color: #b7c0ca;
 }

@@ -6,7 +6,7 @@ export const site = {
   qualityLine: "Calidad que se nota. Resistencia que perdura.",
   factoryLine: "Directo de fábrica a tu obra.",
   description:
-    "Bloquera en San Agustín Yatareni, Oaxaca. Fabricamos block hueco y sólido, tabicón, adoquín y prefabricados de concreto. Directo de fábrica a tu obra.",
+    "Bloquera en San Agustín Yatareni, Oaxaca. Fabricamos productos de concreto vibrocomprimidos: block hueco y sólido, tabicón, adoquín y prefabricados. Directo de fábrica a tu obra.",
   seoTitle: "Bloquera en Oaxaca | Block, tabicón y adoquín | MONOBLOCK",
   url: "https://www.monoblockbloquera.com",
   phone: "951 471 6357",
@@ -14,9 +14,9 @@ export const site = {
   telephoneIntl: "+52-951-471-6357",
   whatsapp: "5219514716357",
   email: "monoblockbloquera@gmail.com",
-  address: "Carretera a Guelatao km 2, antiguo camino a Tlalixtac, a un costado del Motel W, San Agustín Yatareni, Oaxaca.",
-  addressShort: "Carretera a Guelatao km 2, San Agustín Yatareni, Oaxaca",
-  streetAddress: "Carretera a Guelatao km 2, antiguo camino a Tlalixtac, a un costado del Motel W",
+  address: "Carretera a Guelatao km2, San Agustín Yatareni.\n(A un costado del motel W).",
+  addressShort: "Carretera a Guelatao km2, San Agustín Yatareni.",
+  streetAddress: "Carretera a Guelatao km2 (a un costado del motel W)",
   locality: "San Agustín Yatareni",
   region: "Oaxaca",
   postalCode: "68240",
@@ -26,7 +26,6 @@ export const site = {
     longitude: -96.6775,
   },
   mapsQuery: "Carretera a Guelatao km 2, San Agustín Yatareni, Oaxaca",
-  leadTime: "12 a 15 días hábiles",
   locale: "es_MX",
   language: "es-MX",
   social: {
@@ -40,17 +39,12 @@ export const faqs = [
   {
     question: "¿Dónde está la planta de MONOBLOCK BLOQUERA?",
     answer:
-      "Estamos en Carretera a Guelatao km 2, antiguo camino a Tlalixtac, a un costado del Motel W, San Agustín Yatareni, Oaxaca.",
+      "Estamos en Carretera a Guelatao km2, San Agustín Yatareni. (A un costado del motel W).",
   },
   {
-    question: "¿Qué productos de concreto fabrican?",
+    question: "¿Qué productos de concreto vibrocomprimidos fabrican?",
     answer:
-      "Fabricamos block hueco y sólido, block cara de piedra, tabicón pesado y ligero, adoquín hexagonal, rectangular y tipo roca, adopasto, bovedilla y prefabricados de concreto, en gris y color.",
-  },
-  {
-    question: "¿Cuánto tarda la fabricación?",
-    answer:
-      "El tiempo estimado de fabricación es de 12 a 15 días hábiles después de confirmar el pedido. Cotizamos según medida y volumen.",
+      "Fabricamos productos de concreto vibrocomprimidos: block hueco y sólido, block cara de piedra, tabicón pesado y ligero, adoquín hexagonal, rectangular y tipo roca, adopasto, bovedilla y prefabricados, en gris y color.",
   },
   {
     question: "¿Atienden constructoras y particulares?",
