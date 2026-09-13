@@ -2,7 +2,6 @@ export type ProductCategory = {
   slug: string;
   name: string;
   summary: string;
-  extra?: string;
   image: string;
   alt: string;
 };
@@ -17,7 +16,6 @@ export const categories: ProductCategory[] = [
     slug: "block-hueco",
     name: "Block hueco",
     summary: "12, 15 y 20 cm. Gris, color y ligero.",
-    extra: "Block cara de piedra",
     image: "/images/products/block.jpg",
     alt: "Block hueco de concreto fabricado en MONOBLOCK BLOQUERA, Oaxaca",
   },
@@ -25,15 +23,27 @@ export const categories: ProductCategory[] = [
     slug: "block-solido",
     name: "Block sólido",
     summary: "Ligero y pesado, en varias medidas.",
-    extra: "Tabicón pesado y ligero",
     image: "/images/products/solido.jpg",
     alt: "Block sólido de concreto para construcción en Oaxaca",
+  },
+  {
+    slug: "cara-piedra",
+    name: "Block cara de piedra",
+    summary: "15 y 20 cm. Gris y color.",
+    image: "/images/products/cara-piedra.jpg",
+    alt: "Block cara de piedra fabricado en MONOBLOCK BLOQUERA, Oaxaca",
+  },
+  {
+    slug: "tabicon",
+    name: "Tabicón pesado y ligero",
+    summary: "10x14x28 cm. Pesado y ligero.",
+    image: "/images/products/tabicon.jpg",
+    alt: "Tabicón de concreto pesado y ligero fabricado en MONOBLOCK BLOQUERA, Oaxaca",
   },
   {
     slug: "adoquin",
     name: "Adoquines",
     summary: "Hexagonal, rectangular y tipo roca.",
-    extra: "Bovedilla",
     image: "/images/products/adoquin.jpg",
     alt: "Adoquín hexagonal de concreto para urbanización en Oaxaca",
   },
@@ -43,6 +53,13 @@ export const categories: ProductCategory[] = [
     summary: "10x25x25 cm, gris y color.",
     image: "/images/products/adopasto.jpg",
     alt: "Adopasto de concreto gris y color fabricado en MONOBLOCK",
+  },
+  {
+    slug: "bovedilla",
+    name: "Bovedilla",
+    summary: "Para losa y entrepiso.",
+    image: "/images/products/bovedilla.jpg",
+    alt: "Bovedilla de concreto fabricada en MONOBLOCK BLOQUERA, Oaxaca",
   },
 ];
 

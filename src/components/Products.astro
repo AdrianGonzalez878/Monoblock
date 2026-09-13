@@ -16,34 +16,21 @@ import { categories } from "../data/products";
 
     <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
       {categories.map((item) => (
-        <div class="flex flex-col gap-3">
-          <article class="group overflow-hidden bg-white">
-            <div class="aspect-[4/3] overflow-hidden">
-              <img
-                src={item.image}
-                alt={item.alt}
-                class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                loading="lazy"
-              />
-            </div>
-            <div class="border-t-2 border-brand p-5">
-              <h3 class="font-display text-2xl uppercase text-ink">{item.name}</h3>
-              <p class="mt-1 text-sm text-concrete">{item.summary}</p>
-            </div>
-          </article>
-          {item.extra && (
-            <p class="border border-stone/70 bg-white px-4 py-3 text-sm text-charcoal sm:hidden">
-              {item.extra}
-            </p>
-          )}
-        </div>
+        <article class="group overflow-hidden bg-white">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img
+              src={item.image}
+              alt={item.alt}
+              class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+          <div class="border-t-2 border-brand p-5">
+            <h3 class="font-display text-2xl uppercase text-ink">{item.name}</h3>
+            <p class="mt-1 text-sm text-concrete">{item.summary}</p>
+          </div>
+        </article>
       ))}
     </div>
-
-    <ul class="mt-10 hidden gap-3 text-sm text-charcoal sm:grid sm:grid-cols-3">
-      {categories.filter((item) => item.extra).map((item) => (
-        <li class="border border-stone/70 bg-white px-4 py-3">{item.extra}</li>
-      ))}
-    </ul>
   </div>
 </section>
